@@ -8,4 +8,4 @@
 * Copy all files and paste inside the www.example.com/status_video/ directory.
 * Create new directory inside status_videos and name it "videos" .
 
-* Open strings file in android studio and replace the value ip with your domain name.
+* Open strings.xml file in android studio and replace the value ip with your domain name.
