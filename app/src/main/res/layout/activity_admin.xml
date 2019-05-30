@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Admin"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+
+    <Spinner
+
+        android:id="@+id/spinner1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="201dp" />
+
+    <Button
+        android:id="@+id/video_id"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="229dp"
+        android:layout_marginBottom="51dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:text="Video"
+        android:textColor="#fff" />
+
+    <Button
+        android:id="@+id/thumb_id"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="162dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:text="Thumbnail"
+        android:visibility="gone"
+        android:textColor="#fff" />
+
+
+    <EditText
+        android:id="@+id/title_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="72dp"
+        android:hint="Title of the video" />
+
+    <EditText
+        android:id="@+id/singer_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/title_id"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="133dp"
+        android:hint="Enter singer name(Optional)" />
+
+    <EditText
+        android:id="@+id/addQuote_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/singer_id"
+        android:layout_alignStart="@+id/title_id"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="25dp"
+        android:hint="Add Quotes (optional)" />
+
+    <Button
+        android:id="@+id/submit_id"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="239dp"
+        android:layout_marginBottom="46dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:text="Submit"
+        android:textColor="#fff" />
+
+
+    <Button
+        android:id="@+id/submit_quotes"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="27dp"
+        android:layout_marginBottom="346dp"
+        android:layout_weight="1"
+        android:background="@color/colorPrimary"
+        android:text="Add Quotes"
+        android:textColor="#fff" />
+
+
+    <CheckBox
+        android:id="@+id/trending_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/title_id"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:layout_marginBottom="142dp"
+        android:gravity="center"
+        android:text="Trending" />
+
+
+    <ImageView
+        android:id="@+id/thumbImg"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="70dp" />
+
+
+</RelativeLayout>

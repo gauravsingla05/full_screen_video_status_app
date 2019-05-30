@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Full_screen">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <VideoView
+
+        android:id="@+id/full_screen_video_activty_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+
+        />
+
+
+        <RelativeLayout
+            android:visibility="gone"
+            android:id="@+id/video_controls"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:gravity="bottom"
+            android:background="#ce181717"
+
+            >
+
+            <ImageView
+                android:layout_marginTop="0dp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:id="@+id/play_btn"
+                android:layout_centerHorizontal="true"
+                android:background="@mipmap/play_button"
+                android:visibility="gone"
+
+                />
+
+            <ImageView
+                android:id="@+id/play_pause"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:src="@mipmap/pause_button"
+                 />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/current_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="24dp"
+                android:text="Starting"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_marginTop="15dp"
+                android:id="@+id/ending_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginEnd="20dp"
+                android:text="Ending"
+                android:textColor="#fff" />
+
+            <ProgressBar
+                android:id="@+id/videoProgress"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_alignParentBottom="true"
+
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="12dp"
+                android:background="#fff" />
+
+
+        </RelativeLayout>
+
+        <ProgressBar
+            android:visibility="invisible"
+            android:id="@+id/videoLoading"
+            style="?android:attr/progressBarStyle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+
+
+    </RelativeLayout>
+
+    <com.github.clans.fab.FloatingActionMenu
+        android:id="@+id/menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="80dp"
+        android:layout_marginLeft="10dp"
+       >
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/download_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/download_ic"
+            app:fab_label="Download"
+            app:fab_size="mini"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/share_ic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/share"
+            app:fab_label="Share"
+            app:fab_size="mini"
+            />
+        <com.github.clans.fab.FloatingActionButton
+            android:id="@+id/repost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/whatsapp"
+            app:fab_label="Repost"
+            app:fab_size="mini"
+            />
+
+    </com.github.clans.fab.FloatingActionMenu>
+
+
+</RelativeLayout>

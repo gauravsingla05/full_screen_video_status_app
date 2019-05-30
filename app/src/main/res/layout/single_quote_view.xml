@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@color/bg"
+    android:layout_margin="5dp"
+    android:orientation="vertical">
+
+
+    <android.support.v7.widget.CardView
+        android:background="@color/bg"
+        android:id="@+id/cardView"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        card_view:cardCornerRadius="1dp">
+
+        <RelativeLayout
+
+            android:id="@+id/relativeLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="5dp"
+
+            >
+
+            <TextView
+
+                android:gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="CAPTIONS DAILY"
+                android:id="@+id/captionText"
+                android:textColor="#3a3891"
+                />
+
+
+
+        </RelativeLayout>
+
+
+
+    </android.support.v7.widget.CardView>
+
+    <RelativeLayout
+        android:id="@+id/sharecapbtn"
+        android:layout_below="@+id/cardView"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:background="@drawable/blue_shape">
+
+        <TextView
+
+            android:gravity="center"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:text="Share"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#fff" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/share" />
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/copycapbtn"
+        android:layout_width="180dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/cardView"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/green">
+
+        <TextView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="35dp"
+            android:text="Copy"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Medium"
+            android:textColor="#fff" />
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="36dp"
+            android:background="@drawable/copy" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

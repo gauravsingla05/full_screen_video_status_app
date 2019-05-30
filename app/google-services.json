@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "637305106356",
+    "firebase_url": "https://lyrics-video-status-app.firebaseio.com",
+    "project_id": "lyrics-video-status-app",
+    "storage_bucket": "lyrics-video-status-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:637305106356:android:6f0df5d8fa21dcf4",
+        "android_client_info": {
+          "package_name": "fullscreen.allvideos.punjabi.trending.app.lyricsvideostatus.gssingla.com.lyricsvideostatus"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "637305106356-djgb9iovkuosbst64i4h5phqerej4u6p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeJgkHLVwc3hOQIfNhlVDxrc9hwN0oDOw"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
